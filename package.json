@@ -65,6 +65,7 @@
     "vaul": "1.1.2"
   },
   "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.62.2",
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
     "tailwindcss": "4.1.12",
@@ -86,5 +87,9 @@
     "overrides": {
       "vite": "6.3.5"
     }
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true,
+    "@tailwindcss/oxide@4.1.12": true
   }
 }
