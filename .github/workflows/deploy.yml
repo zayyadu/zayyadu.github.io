@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
-  contents: write   # <-- changed from read
+  contents: read
   pages: write
   id-token: write
 
@@ -53,4 +54,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4   # <-- fixed version
+        uses: actions/deploy-pages@v4
